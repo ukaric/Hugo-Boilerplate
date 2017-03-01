@@ -1,0 +1,49 @@
+{
+  "name": "hugo-bolierplate",
+  "version": "1.0.0",
+  "description": "Hugo static site generator development and deployment workflow.",
+  "main": "index.js",
+  "repository": "https://github.com/ukaric/Hugo-Boilerplate",
+  "author": "Uros Karic",
+  "license": "MIT",
+  "scripts": {
+    "clean": "gulp clean:all",
+    "build": "gulp",
+    "build:prod": "gulp build:prod",
+    "optimize": "gulp html:prod"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.4",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-util": "^3.0.8",
+    "normalize.css": "^5.0.0",
+    "postcss": "^5.2.14",
+    "postcss-font-magician": "^1.6.0",
+    "postcss-reporter": "^3.0.0",
+    "postcss-import": "^9.1.0",
+    "precss": "^1.4.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "uglify-js": "^2.8.4",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "browser-sync": "^2.18.8",
+    "cross-spawn": "^5.0.1",
+    "node-notifier": "^5.0.2",
+    "rimraf": "^2.6.0"
+  }
+}

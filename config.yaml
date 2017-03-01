@@ -1,0 +1,20 @@
+---
+title           : "uroskaric.me"
+baseURL         : "http://localhost:9999"
+languageCode    : "en-us"
+metaDataFormat  : "yaml"
+paginate        : 0
+buildDrafts     : true
+buildFuture     : true
+disable404      : true
+enableRobotsTXT : true
+watch           : true
+
+archetypedir  : "src/archetypes"
+contentdir    : "src/content"
+dataDir       : "src/data"
+layoutdir     : "src/layouts"
+publishdir    : "build/development"
+staticdir     : "src/static"
+themesdir     : "src/themes"
+...

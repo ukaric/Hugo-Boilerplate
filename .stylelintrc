@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "color-hex-case": "lower",
+    "color-no-invalid-hex": true,
+    "color-named": "never",
+    "number-leading-zero": "always",
+    "number-max-precision": 5,
+    "number-no-trailing-zeros": true,
+    "length-zero-no-unit": true,
+  }
+}
