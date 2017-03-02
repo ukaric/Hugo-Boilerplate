@@ -1,6 +1,6 @@
 ---
 title           : "uroskaric.me"
-baseURL         : "http://localhost:9999"
+baseURL         : ""
 languageCode    : "en-us"
 metaDataFormat  : "yaml"
 paginate        : 0

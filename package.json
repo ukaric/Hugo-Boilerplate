@@ -30,7 +30,6 @@
     "normalize.css": "^5.0.0",
     "postcss": "^5.2.14",
     "postcss-font-magician": "^1.6.0",
-    "postcss-reporter": "^3.0.0",
     "postcss-import": "^9.1.0",
     "precss": "^1.4.0",
     "require-dir": "^0.3.1",
