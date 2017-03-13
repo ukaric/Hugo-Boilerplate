@@ -1,6 +1,6 @@
 box: node
 
-build:
+build-hugo:
   steps:
     - codio/yarn@0.0.3:
         name: Install yarn
@@ -14,7 +14,32 @@ build:
     - hgen/gulp@0.1.3:
         name: Optimizing
         tasks: html:prod
-deploy:
+
+build-portfolio:
+  steps:
+    - codio/yarn@0.0.3:
+        name: Install yarn
+        production: true
+    - hgen/gulp@0.1.3:
+        name: Asset Building
+        tasks: build:prod
+    - arjen/hugo-build:
+        name: Hugo Building
+        config: config.production.yaml
+    - hgen/gulp@0.1.3:
+        name: Optimizing
+        tasks: html:prod
+
+deploy-hugo:
+  steps:
+    - leipert/git-push@0.7.6:
+        gh_oauth: $GH_TOKEN
+        clean_removed_files: true
+        tag: Wercker deploy
+        basedir: build/production
+        repo: ukaric/Hugo-Build
+
+deploy-portfolio:
   steps:
     - leipert/git-push@0.7.6:
         gh_oauth: $GH_TOKEN
