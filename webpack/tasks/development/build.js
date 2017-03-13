@@ -5,7 +5,9 @@ gulp.task('build', cb => {
   runSequence(
     'clean:all',
     'fonts',
-    ['styles', 'images', 'webpack'],
+    'styles',
+
+    ['images', 'webpack'],
     'hugo',
     cb
   );

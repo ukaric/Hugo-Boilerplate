@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
-const precss = require('precss');
+const sass = require('gulp-sass');
+const moduleImporter = require('sass-module-importer');
 const importcss = require('postcss-import');
 const autoprefixer = require('autoprefixer');
 const fonts = require('postcss-font-magician');
@@ -10,7 +11,6 @@ const cssnano = require('cssnano');
 
 const preprocessros = [
   importcss,
-  precss,
   autoprefixer,
   fonts({
     hosted: ['./src/static/fonts', './fonts']
@@ -22,6 +22,9 @@ const postprocessors = [cssnano];
 gulp.task('styles:prod', () => {
   gulp
     .src(config.src)
+    .pipe(sass({
+      importer: moduleImporter()
+    }))
     .pipe(postcss(preprocessros))
     .pipe(sourcemaps.init())
     .pipe(postcss(postprocessors))

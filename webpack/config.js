@@ -26,7 +26,7 @@ module.exports = {
     fonts: src + 'static/fonts'
   },
   styles: {
-    src: assets + 'css/**/main.css',
+    src: assets + 'css/**/main.{css,sass,scss}',
     dest: src + '/static/css',
     reporter: {
       clearMessages: true,
@@ -39,7 +39,7 @@ module.exports = {
   },
   images: {
     src: assets + 'img/**/*.{jpg,jpeg,png,gif}',
-    dest: dev + 'img',
+    dest: src + 'static/img',
     options: {
       optimizationLevel: 3,
       progessive: true,
@@ -65,7 +65,10 @@ module.exports = {
           'display: hidden; padding: 5px 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; right: 5px; top: 5px; border-bottom-right-radius: 5px; margin: 0px; color: #f8f8f8; text-align: center; background: linear-gradient(to left, #f85032 , #e73827);'
         ]
       },
-      host: '185.112.23.79'
+      host: '185.112.23.74',
+      logConnections: true,
+      logFileChanges: true,
+      logLevel: 'info',
     },
     production: {
       server: {
@@ -112,7 +115,7 @@ module.exports = {
       src + 'static/**/*.{js,css}',
       src + '*'
     ],
-    styles: assets + 'css/**/*.css',
+    styles: assets + 'css/**/*.{css,scss,sass}',
     scripts: assets + 'js/**/*.js',
     images: assets + 'img/**/'
   }

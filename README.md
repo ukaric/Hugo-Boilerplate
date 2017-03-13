@@ -1,4 +1,5 @@
 # Hugo Static site generator workflow.
-# Work in progress ...
 
-## Includes: [Build, deploy,ci process and code optimization.]
+## Includes: [Build process and code optimization.]
+
+[Work in progress]

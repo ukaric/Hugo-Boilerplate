@@ -1,6 +1,6 @@
 ---
 title           : "Hugo | Starterkit Boilerplate"
-baseURL         : "https://ukaric.github.io/Hugo-Build/"
+baseURL         : "https://ukaric.github.io/"
 languageCode    : "en-us"
 metaDataFormat  : "yaml"
 paginate        : 0

@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const notify = require('gulp-notify');
+const sass = require('gulp-sass');
+const moduleImporter = require('sass-module-importer');
 const path = require('path');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
@@ -9,9 +11,9 @@ const autoprefixer = require('autoprefixer');
 const fonts = require('postcss-font-magician');
 const config = require('../../config').styles;
 
+
 const preprocessros = [
   importcss,
-  precss,
   autoprefixer,
   fonts({
     hosted: ['./src/static/fonts', './fonts']
@@ -32,6 +34,9 @@ gulp.task('styles', () => {
         })
       })
     )
+    .pipe(sass({
+      importer: moduleImporter()
+    }))
     .pipe(postcss(preprocessros))
     .pipe(gulp.dest(config.dest))
     .pipe(
