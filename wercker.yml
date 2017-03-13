@@ -47,3 +47,4 @@ deploy-portfolio:
         tag: Wercker deploy
         basedir: build/production
         repo: ukaric/ukaric.github.io
+        branch: master
