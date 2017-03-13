@@ -5,7 +5,6 @@ const moduleImporter = require('sass-module-importer');
 const path = require('path');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
-const precss = require('precss');
 const importcss = require('postcss-import');
 const autoprefixer = require('autoprefixer');
 const fonts = require('postcss-font-magician');
