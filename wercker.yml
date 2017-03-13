@@ -46,4 +46,4 @@ deploy-portfolio:
         clean_removed_files: true
         tag: Wercker deploy
         basedir: build/production
-        repo: ukaric/Hugo-Build
+        repo: ukaric/ukaric.github.io
