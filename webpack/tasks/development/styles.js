@@ -12,15 +12,11 @@ const config = require('../../config').styles;
 
 
 const preprocessros = [
-  importcss,
-  autoprefixer,
-  fonts({
-    hosted: ['./src/static/fonts', './fonts']
-  })
+  importcss
 ];
 
 gulp.task('styles', () => {
-  gulp
+  return gulp
     .src(config.src)
     .pipe(
       plumber({

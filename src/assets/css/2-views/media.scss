@@ -264,14 +264,19 @@
   .line::after {
     bottom: 54.8%;
   }
-  .social .icons a {
-    margin: 0 25px 0 0;
-  }
   .line::after {
     bottom: 58.9%;
   }
   .about-text h3 {
     text-align: left;
+  }
+  .icons a {
+    color: #fff;
+    margin-right: 15px;
+    svg {
+      width: 2.6em;
+      height: 2.6em;
+    }
   }
 }
 
@@ -289,7 +294,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1170px) {
+@media screen and (min-width: 1025px) and (max-width: 1178px) {
   .headphoto {
     left: 100px;
     top: 159px;

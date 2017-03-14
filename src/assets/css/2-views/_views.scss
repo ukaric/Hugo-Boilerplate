@@ -75,31 +75,26 @@ body {
 }
 
 .contact {
-  position: relative;
   margin: var(--left-rail-margin);
-  bottom: 0px;
-  top: 5px;
+  position: relative;
+  .email {
+    padding-bottom: 20px;
+  }
 }
 
-.social i {
-  margin: var(--social-media-margin);
+.social {
+  p {
+    padding-bottom: 20px;
+  }
+}
+
+.icons a {
   color: #fff;
-}
-
-.social .icons a {
-  margin: var(--social-media-margin);
-}
-
-.social p {
-  margin-top: 10px;
-}
-
-.icons :last-child {
-  margin-right: 0px;
-}
-
-.icon-size {
-  font-size: var(--social-icons-size);
+  margin-right: 45px;
+  svg {
+    width: 2.6em;
+    height: 2.6em;
+  }
 }
 
 .medium-heading {
@@ -446,4 +441,13 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
