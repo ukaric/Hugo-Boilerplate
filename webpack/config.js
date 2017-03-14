@@ -93,16 +93,7 @@ module.exports = {
     src: prod + '**/*.html',
     dest: prod,
     options: {
-      collapseWhitespace: true,
-      removeAttributeQuotes: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-      removeEmptyElements: true,
-      removeOptionalTags: true,
-      useShortDoctype: true,
-      sortAttributes: true,
-      sortClassName: true,
-      collapseBooleanAttributes: true
+
     }
   },
   watch: {

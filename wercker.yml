@@ -11,9 +11,7 @@ build-hugo:
     - arjen/hugo-build:
         name: Hugo Building
         config: config.production.yaml
-    - hgen/gulp@0.1.3:
-        name: Optimizing
-        tasks: html:prod
+
 
 build-portfolio:
   steps:
@@ -26,9 +24,7 @@ build-portfolio:
     - arjen/hugo-build:
         name: Hugo Building
         config: config.production.yaml
-    - hgen/gulp@0.1.3:
-        name: Optimizing
-        tasks: html:prod
+
 
 deploy-hugo:
   steps:
