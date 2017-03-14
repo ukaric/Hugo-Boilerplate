@@ -38,7 +38,7 @@ module.exports = {
     dest: src + '/static/fonts'
   },
   images: {
-    src: assets + 'img/**/*.{jpg,jpeg,png,gif}',
+    src: assets + 'img/**/*.{jpg,jpeg,png,gif,svg}',
     dest: src + 'static/img',
     options: {
       optimizationLevel: 3,
