@@ -5,6 +5,15 @@ const moduleImporter = require('sass-module-importer');
 const path = require('path');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
+
+var cached = require('gulp-cached');
+var sassInheritance = require('gulp-sass-inheritance');
+var filter = require('gulp-filter');
+var gulpif = require('gulp-if');
+
+
+const sassPartialsImported = require('gulp-sass-partials-imported');
+
 const importcss = require('postcss-import');
 const autoprefixer = require('autoprefixer');
 const fonts = require('postcss-font-magician');
@@ -29,8 +38,11 @@ gulp.task('styles', () => {
         })
       })
     )
+    .pipe(cached('sassfiles'))
+    .pipe(sassPartialsImported('src/assets/css'))
     .pipe(sass({
-      importer: moduleImporter()
+      importer: moduleImporter(),
+      includePaths: 'src/assets/css'
     }))
     .pipe(postcss(preprocessros))
     .pipe(gulp.dest(config.dest))

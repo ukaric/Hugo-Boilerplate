@@ -19,11 +19,15 @@
     "bulma": "^0.3.2",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
     "gulp-changed": "^2.0.0",
+    "gulp-filter": "^5.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
+    "gulp-sass-inheritance": "^0.5.1",
+    "gulp-sass-partials-imported": "^1.0.5",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-util": "^3.0.8",
     "normalize.css": "^5.0.0",
@@ -33,9 +37,9 @@
     "postcss-reporter": "^3.0.0",
     "require-dir": "^0.3.1",
     "run-sequence": "^1.2.2",
+    "sass-module-importer": "^1.4.0",
     "uglify-js": "^2.8.4",
-    "webpack": "^2.2.1",
-    "sass-module-importer": "^1.4.0"
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",

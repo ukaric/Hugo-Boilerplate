@@ -1,0 +1,444 @@
+:root {
+  --font-family: 'Brandon Grotesque', 'Roboto', 'Helvetica';
+  --main-bg-color: #282c37;
+  --secondary-bg-color: #fff;
+  --main-font-color: #fff;
+  --secondary-font-color: #9baec8;
+  --accent-font-color: #2b90d9;
+  --heading-color: #fff;
+  --small-heading: 1.8em;
+  --medium-heading: 2.5em;
+  --large-heading: 4.2em;
+  --logo-margin: 30px 0 0 30px;
+  --left-rail-margin: 0 0 0 30px;
+  --social-media-margin: 0 45px 0 0;
+  --social-icons-size: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: var(--font-family);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  &.columns.is-gapless:not(:last-child) {
+    margin-bottom: 0;
+  }
+  overflow: hidden;
+  background-image: url(//www.toptal.com/designers/subtlepatterns/patterns/topography.png);
+  background-position: bottom;
+}
+
+.rail-left {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: var(--logo-margin);
+}
+
+.headshoot {
+  position: relative;
+}
+
+.headphoto {
+  position: absolute;
+  left: 200px;
+  top: 55px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.65);
+  max-width: 95%;
+}
+
+.contact {
+  margin: var(--left-rail-margin);
+  position: relative;
+  .email {
+    padding-bottom: 20px;
+  }
+}
+
+.social {
+  p {
+    padding-bottom: 20px;
+  }
+}
+
+.icons a {
+  color: #fff;
+  margin-right: 45px;
+  svg {
+    width: 2.6em;
+    height: 2.6em;
+  }
+}
+
+.medium-heading {
+  font-weight: 500;
+  font-size: var(--medium-heading);
+  color: var(--heading-color);
+}
+
+.small-heading {
+  font-weight: 300;
+  font-size: var(--small-heading);
+  color: var(--heading-color);
+}
+
+.wrapper-right {
+  width: 600px;
+  h1 {
+    font-size: var(--large-heading);
+    font-weight: 700;
+    color: var(--secondary-font-color);
+    line-height: 75px;
+  }
+  & h1:first-of-type {
+    color: #282c37;
+  }
+  position: relative;
+  top: 260px;
+  left: 260px;
+}
+
+.line {
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 70.5%;
+    border-top: 6px solid var(--secondary-font-color);
+    border-radius: 99px;
+    width: 20.5%;
+    margin-left: -73.1%;
+    animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 2s;
+  }
+}
+
+.about-text {
+  h3 {
+    font-size: var(--medium-heading);
+    span {
+      color: var(--accent-font-color);
+    }
+  }
+  p {
+    margin-top: 20px;
+    font-size: 20px;
+    span {
+      color: var(--accent-font-color);
+    }
+    .accent {
+      color: var(--secondary-font-color);
+    }
+  }
+}
+
+.cta-right {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px var(--accent-font-color);
+    color: var(--accent-font-color);
+    font-size: inherit;
+    font-weight: 700;
+    margin: 0 25px 0 0;
+    padding: 1em 2em;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    vertical-align: middle;
+  }
+  button::before,
+  button::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .costume-btn {
+    color: #9baec8;
+    box-shadow: inset 0 0 0 2px #9baec8;
+    margin-right: 0px;
+  }
+  .draw {
+    transition: color 0.25s;
+  }
+  .draw::before,
+  .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  .draw:hover {
+    color: #282c37;
+  }
+  .draw:hover::before,
+  .draw:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .draw:hover::before {
+    border-top-color: #282c37;
+    border-right-color: #282c37;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  .draw:hover::after {
+    border-bottom-color: #282c37;
+    border-left-color: #282c37;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  }
+  .meet:hover {
+    color: #2b90d9;
+  }
+  .meet::after {
+    top: 0;
+    left: 0;
+  }
+  .meet:hover::before {
+    border-top-color: #2b90d9;
+    border-right-color: #2b90d9;
+  }
+  .meet:hover::after {
+    border-bottom-color: #2b90d9;
+    border-left-color: #2b90d9;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+  }
+}
+
+.reveal-text,
+.reveal-text:after {
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text {
+  position: relative;
+  user-select: none;
+  animation-name: reveal-text;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.reveal-text:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b90d9;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+.reveal-text-2,
+.reveal-text-2:after {
+  animation-delay: 1.9s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text-2 {
+  position: relative;
+  user-select: none;
+  animation-name: reveal-text;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.reveal-text-2:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b90d9;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+.reveal-text-3,
+.reveal-text-3:after {
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text-3 {
+  position: relative;
+  user-select: none;
+  animation-name: reveal-text;
+  cursor: default;
+}
+
+.reveal-text-3:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b90d9;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+.reveal-text-4,
+.reveal-text-4:after {
+  animation-delay: 3.3s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text-4 {
+  position: relative;
+  display: block;
+  user-select: none;
+  animation-name: reveal-text;
+  cursor: default;
+}
+
+.reveal-text-4:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b90d9;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+.reveal-text-5,
+.reveal-text-4:after {
+  animation-delay: 3.3s;
+  animation-iteration-count: 1;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text-5 {
+  position: relative;
+  user-select: none;
+  animation-name: reveal-text;
+  cursor: default;
+}
+
+.reveal-text-5:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b90d9;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: revealer-text;
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealer-text {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

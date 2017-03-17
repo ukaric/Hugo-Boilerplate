@@ -1,3 +1,6 @@
+{{ if .Params.page }} {{ partial .Params.page . }} {{ else }}
+<!-- Render content normally -->
+
 <!doctype html>
 
 <head class="no-js" lang="{{ .Site.LanguageCode}}">
@@ -21,3 +24,4 @@
 </body>
 
 </html>
+{{ end }}

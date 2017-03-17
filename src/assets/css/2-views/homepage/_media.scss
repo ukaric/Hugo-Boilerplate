@@ -1,4 +1,8 @@
 
+/*///////////////////////
+  Media querry's
+*/ //////////////////////
+
 /* ----------- iPhone 5 and 5S ----------- */
 
 
@@ -13,7 +17,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    top: -10px;
   }
   .wrapper-right {
     padding-top: 50px;
@@ -66,6 +74,7 @@
     margin: auto;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
   }
   .wrapper-right {
     padding-top: 100px;
@@ -138,7 +147,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 20px;
+    top: 100px;
     margin: auto;
     width: 250px;
     height: 250px;
@@ -171,11 +180,12 @@
     text-align: left;
   }
   .headphoto {
+    max-width: 90%;
     border-radius: 0;
     width: auto;
     height: auto;
     top: 90px;
-    left: 110px;
+    left: 120px;
   }
   .wrapper-right {
     padding-top: 125px;
@@ -214,7 +224,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 20px;
     margin: auto;
     width: 150px;
     height: 150px;
@@ -247,15 +256,16 @@
     border-radius: 0;
     width: auto;
     height: auto;
-    top: 90px;
-    left: 110px;
+    top: 55px;
+    left: 160px;
+    width: 250px;
   }
   .wrapper-right {
     padding-top: 125px;
     width: 350px;
     position: relative;
     left: 140px;
-    top: 161px;
+    top: -30px;
     display: block;
   }
   .cta-right {
@@ -286,8 +296,9 @@
     width: 500px;
     position: relative;
     left: 140px;
-    top: 61px;
+    top: 0px;
     display: block;
+    text-align: left;
   }
   .line::after {
     bottom: 46.8%;
@@ -321,5 +332,26 @@
     position: relative;
     top: 370px;
     left: 360px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) and (orientation: portrait) {
+  .headphoto {
+    border-radius: 0%;
+    width: 255px;
+    height: 421px;
+    top: -60px;
+    left: 150px;
+  }
+  .wrapper-right {
+    top: 200px;
+    text-align: left;
+  }
+  .about-text h3,
+  p {
+    text-align: left;
+  }
+  .contact {
+    display: block;
   }
 }
