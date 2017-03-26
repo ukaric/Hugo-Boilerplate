@@ -1,2 +1,2 @@
-console.log('App.js loaded');
-
+import './scroll';
+import './buttons';

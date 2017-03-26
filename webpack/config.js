@@ -56,7 +56,7 @@ module.exports = {
         port: 9997,
         weinre: {
           port: 9996
-        }
+        },
       },
       open: false,
       files: [dev + '/css/*.css', dev + '/js/*.js', dev + '/img/**'],
@@ -65,7 +65,7 @@ module.exports = {
           'display: hidden; padding: 5px 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; right: 5px; top: 5px; border-bottom-right-radius: 5px; margin: 0px; color: #f8f8f8; text-align: center; background: linear-gradient(to left, #f85032 , #e73827);'
         ]
       },
-      host: '192.168.1.25',
+      host: '185.112.23.195',
       logConnections: true,
       logFileChanges: true,
       logLevel: 'info',

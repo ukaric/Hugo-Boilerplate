@@ -1,0 +1,17 @@
+/* helper */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+$timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+$nav-width-desktop: 40em;
+$nav-width-mobile: 25em;
+$nav-item-nb: 6;
