@@ -1,6 +1,6 @@
 ---
 title           : "uroskaric.me"
-baseURL         : "http://185.112.23.195:9999"
+baseURL         : "./"
 languageCode    : "en-us"
 metaDataFormat  : "yaml"
 paginate        : 0
