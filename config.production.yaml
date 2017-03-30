@@ -1,6 +1,6 @@
 ---
 title           : "Uros Karic | Virtual Card"
-baseURL         : "./"
+baseURL         : "https://ukaric.github.io"
 languageCode    : "en-us"
 metaDataFormat  : "yaml"
 paginate        : 0
