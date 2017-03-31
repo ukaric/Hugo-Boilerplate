@@ -39,7 +39,7 @@ deploy-portfolio:
   steps:
     - wercker/create-file@1.0.0:
         name: Create CNAME
-        filename: CNAME
+        filename: ./build/production/CNAME
         overwrite: true
         content: uroskaric.me
     - leipert/git-push@0.7.6:
